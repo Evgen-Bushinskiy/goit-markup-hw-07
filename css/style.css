@@ -358,7 +358,7 @@ ul {
 
 /* Team */
 
-.team {
+/* .team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
@@ -450,7 +450,7 @@ ul {
 .team__socials-link:hover .team__socials-icon,
 .team__socials-link:focus .team__socials-icon {
   fill: var(--White-color);
-}
+} */
 
 /* CLIENTS */
 
