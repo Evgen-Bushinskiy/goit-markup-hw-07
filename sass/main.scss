@@ -1,15 +1,17 @@
 @import './utills/vars';
-@import './base/reset.scss';
-
-@import './layout/logo';
+@import './base/reset';
+@import './components/logo';
 @import './layout/header';
-@import'./layout/hero';
+@import './components/modal';
+@import './layout/hero';
 @import './layout/benefits';
 @import './layout/work';
 @import './layout/team';
-@import '';
-@import '';
-@import '';
-
-@import './components/modal';
-
+@import './layout/clients';
+@import './components/logo-footer';
+@import './layout/footer';
+@import './components/button';
+@import './components/subscription-form';
+@import './pages/main-portfolio';
+@import './components/button-portfolio';
+@import './layout/projects';
