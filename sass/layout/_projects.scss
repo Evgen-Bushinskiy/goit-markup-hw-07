@@ -24,23 +24,20 @@
   transition-property: color, background-color;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--cubik-transform);
-}
 
-.projects__item:hover,
-.projects__item:focus {
+&:hover,
+&:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+}
+
 
 .projects__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.projects__item-link:hover .projects__thumb-text,
-.projects__item-link:focus .projects__thumb-text {
-  transform: translateY(0%);
-}
 
 .projects__thumb-text {
   position: absolute;
@@ -61,6 +58,11 @@
   color: var(--White-color);
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.projects__item-link:hover &,
+.projects__item-link:focus & {
+  transform: translateY(0%);
+}
 }
 
 .projects-link {

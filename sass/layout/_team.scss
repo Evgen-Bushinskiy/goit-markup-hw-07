@@ -61,13 +61,13 @@
   justify-content: center;
 }
 
-.team__socials-item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .team__socials-item {
   width: 44px;
   height: 44px;
+
+&:not(:last-child) {
+  margin-right: 10px;
+}
 }
 
 .team__socials-link {
@@ -82,14 +82,15 @@
   transition-property: color, background-color;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--cubik-transform);
-}
 
-.team__socials-link:hover,
-.team__socials-link:focus {
+
+&:hover,
+&:focus {
   background: var(--accent-color);
 }
 
-.team__socials-link:hover .team__socials-icon,
-.team__socials-link:focus .team__socials-icon {
+&:hover .team__socials-icon,
+&:focus .team__socials-icon {
   fill: var(--White-color);
+}
 }

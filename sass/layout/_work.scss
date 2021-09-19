@@ -14,11 +14,12 @@
 
 .work__list {
   display: flex;
-}
 
-.work__list .work__item:not(:last-child) {
+& .work__item:not(:last-child) {
   margin-right: 30px;
 }
+}
+
 
 .work__item {
   position: relative;

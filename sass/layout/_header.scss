@@ -16,11 +16,12 @@
 .nav {
   position: relative;
   display: flex;
-}
 
-.nav .nav__item:not(:last-child) {
+& .nav__item:not(:last-child) {
   margin-right: 50px;
 }
+}
+
 
 .nav__link {
   display: block;
@@ -36,9 +37,8 @@
   transition-property: color, background-color;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--time-animation);
-}
 
-.nav__link--current::after {
+&--current::after {
   content: '';
   display: block;
   position: absolute;
@@ -48,24 +48,25 @@
   border-radius: 2px;
   bottom: 0;
   transition: opacity 250ms var(--cubik-transform);
-}
 
-.nav__link:hover,
-.nav__link:focus {
+&:hover,
+&:focus {
   color: var(--accent-color);
 }
 
-.nav__link:hover::after {
+&:hover::after {
   opacity: 1;
 }
+}
+
 
 .contacts {
   display: flex;
   margin-left: auto;
-}
 
-.contacts .contacts__item + .contacts__item {
+& + .contacts__item {
   margin-left: 50px;
+}
 }
 
 .contacts__link {
@@ -80,6 +81,11 @@
   transition-property: color, background-color;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--cubik-transform);
+
+&:hover,
+&:focus {
+  color: var(--accent-color);
+}
 }
 
 .contacts__icon {
@@ -88,14 +94,9 @@
   transition-property: color, background-color;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--cubik-transform);
-}
 
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--accent-color);
-}
-
-.contacts__link:hover .contacts__icon,
-.contacts__link:focus .contacts__icon {
+.contacts__link:hover &,
+.contacts__link:focus & {
   fill: var(--accent-color);
+}
 }

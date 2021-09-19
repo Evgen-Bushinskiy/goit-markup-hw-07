@@ -66,12 +66,13 @@
   transition-property: color, background-color;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--cubik-transform);
-}
 
-.footer__social-link:hover,
-.footer__social-link:focus {
+&:hover,
+&:focus {
   background-color: var(--accent-color);
 }
+}
+
 
 .footer__icon {
   fill: var(--White-color);
